@@ -40,9 +40,10 @@ public class PlayerController : MonoBehaviour
     * Increase the score each time the coin has been collected
     */
    public void CollectCoin()
-   {
+   { 
         score += 1;
-   }
+        ApplicationInstance.SharedInstance.SetScore(score);
+    }
 
 
     /*
